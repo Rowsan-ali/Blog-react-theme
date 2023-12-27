@@ -1,25 +1,22 @@
-import logo from './logo.svg';
+import 'react-dom';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import NavBar from './Components/NavBar';
+import Feature_blog from './Components/Feature_blog';
+import Blog_section from './Components/Blog_section';
+import Subscription from './Components/Subscription'
+import Footer from './Components/Footer'
+
+function App(){
+  return(
+    <>
+    <NavBar/>
+    <Feature_blog/>
+    <Blog_section/>
+    <Subscription/>
+    <Footer/>
+    </>
+  )
 }
 
 export default App;

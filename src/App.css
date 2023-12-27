@@ -1,38 +1,340 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;500;800&display=swap');
+
+.Nav_container{
+  height: 4em;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-end;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Nav-links-container{
+  height: 4em;
+  width: 55em;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 4em;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.top-Container-links{
+  text-decoration: none;
+  font-family: JetBrains Mono;
+  color: #000000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-Container-btn{
+  height: 3.5em;
+  width: 12em;
+  font-family: JetBrains Mono;
+  border-style: none;
+  background-color: #000000;
+  color: #ffffff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Feature_blog_container{
+  height: 30em;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 2em;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  gap: 1em;
+}
+
+.Feature-blog-img{
+  height: 30em;
+  width: 50em;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Feature-blog-content{
+  height: 30em;
+  width: 50em;
+  background-color: rgb(255, 255, 255);
+}
+
+.Feature-blog-image{
+  width: 80%;
+  border-radius: 10px;
+}
+
+.Feature-blog-heading{
+  font-family: JetBrains Mono;
+  font-size: 28px;
+  margin-top: 2em;
+}
+
+.Feature-blog-subheading{
+  font-family: Jetbrains Mono;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.Feature-blog-btn{
+  height: 3em;
+  width: 10em;
+  background-color: #e0e0e0;
+  border-style: none;
+  color: rgb(0, 0, 0);
+  font-family: JetBrains Mono;
+  cursor: pointer;
+  border-radius: 50px;
+}
+
+.Blog_section_container{
+  height: auto;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 5em;
+}
+
+.Blog-section-header{
+  height: 5em;
+  width: 100%;
+  background-color: rgb(254, 254, 254);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.Blog-section-heading{
+  font-family: JetBrains Mono;
+}
+
+.Blog-section{
+  width: 100%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10em;
+}
+
+.Blog-card-container{
+  height: 28em;
+  width: 24em;
+  background-color: rgb(255, 255, 255);
+}
+
+.Blog-card-image{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.Blog-card-heading{
+  font-family: Jetbrains Mono;
+  font-size: 20px;
+}
+
+.Blog-card-subheading{
+  font-family: Jetbrains Mono;
+  font-size: 13px;
+}
+
+.Blog-card-btn{
+  text-decoration: none;
+  font-family: Jetbrains Mono;
+  font-size: 15px;
+  color: rgb(168, 168, 235);
+}
+
+.Subscription_container{
+  height: auto;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 5em;
+}
+
+.Subscription-header{
+  height: 5em;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+}
+
+.Subscription-heading{
+  font-family: Jetbrains Mono;
+  font-size: 18px;
+}
+
+.Subscription-content{
+  height: 7em;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+
+.Subscription_input{
+  height: 2.5em;
+  width: 25em;
+  border-style: none;
+  border-radius: 6px;
+  font-family: Jetbrains Mono;
+  background-color: #f9f9f9;
+}
+
+.Subscription-btn{
+  height: 3em;
+  width: 9em;
+  background-color: #000000;
+  color: #ffffff;
+  border-style: none;
+  border-radius: 10px;
+  font-family: Jetbrains Mono;
+}
+
+.Footer_container{
+  height: auto;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  margin-top: 7em;
+  display: flex;
+  gap: 4em;
+  justify-content: center;
+}
+
+.Footer-links-container{
+  height: 15em;
+  width: 20em;
+  background-color: rgb(255, 255, 255);
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.Footer-heading{
+  font-family: Jetbrains Mono;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+
+.Footer-subheading{
+  font-family: Jetbrains Mono;
+  font-size: 12px;
+}
+
+.Footer_links{
+  font-size: 17px;
+  text-decoration: none;
+  font-family: Jetbrains Mono;
+  color: black;
+}
+
+.HamburgerMenu{
+  visibility: hidden;
+}
+
+@media screen and (max-width:602px){
+  .Subscription-content{
+    flex-direction: column;
+    gap:1em;
   }
-  to {
-    transform: rotate(360deg);
+
+  .Subscription_input{
+    width: 100%;
+  }
+
+  .Subscription-btn{
+    width: 100%;
+  }
+
+  .Subscription_container{
+    height: auto;
+  }
+
+  .Blog-section{
+    gap: 1em;
+  }
+}
+
+@media screen and (max-width:1334px){
+
+  .HamburgerMenu{
+    visibility: visible;
+    margin-right: 2em;
+  }
+.Nav-links-container{
+  visibility: hidden;
+}
+
+  .Feature_blog_container{
+    flex-wrap: wrap;
+    height: auto;
+  }
+
+  .Feature-blog-img{
+    height: auto;
+  }
+
+  .Feature-blog-image{
+    width: 80%;
+  }
+
+  .Feature-blog-content{
+    height: auto;
+  }
+
+  .Feature-blog-heading{
+    text-align: center;
+    font-size: 25px;
+  }
+
+  
+  .Feature-blog-subheading{
+    text-align: center;
+    font-size: 13px;
+  }
+
+  .Feature-blog-btn{
+    width: 100%;
+  }
+
+  .Blog-section{
+    gap: 4em;
+  }
+}
+
+@media screen and (max-width:826px){
+  .Feature-blog-image{
+    width: 100%;
+  }
+
+  .Footer-subheading{
+    text-align: center;
+  }
+
+  .Feature-blog-heading{
+    text-align: left;
+  }
+
+  .Feature-blog-subheading{
+    text-align: left;
+  }
+
+  .Footer_container{
+    flex-direction: column;
+    height: auto;
+  }
+
+  .Footer-links-container{
+    width: 100%;
+    height: auto;
+    align-items: center;
+  }
+
+  .Blog-section{
+    gap: 1em;
   }
 }
